@@ -5,7 +5,7 @@
         <router-link to="/">Início</router-link>
         <p>|</p>
 
-        <router-link to="/">Acompanhamento</router-link>
+        <router-link to="/follow">Acompanhamento</router-link>
       </div>
       <div class="d-flex">
         <button>Ordem de Serviço</button>
