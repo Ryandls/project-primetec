@@ -1,7 +1,6 @@
 <template>
-  <div class="home">
-    <Header />
-    <img src="" alt="">
+  <div>
+    <Header/>
   </div>
 
 </template>

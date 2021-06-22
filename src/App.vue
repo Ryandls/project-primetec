@@ -1,14 +1,16 @@
 <template>
   <div>
-    <Header/>
-    <router-view />
+    <Header />
+    <div class="background">
+      <router-view />
+    </div>
   </div>
 </template>
 
 <script>
-import Header from "./components/Header.vue";
+import Header from "@/components/Header.vue";
 export default {
-  name: "Header",
+  name: "Home",
   components: {
     Header,
   },
@@ -21,5 +23,8 @@ export default {
   padding: 0;
   box-sizing: border-box;
   font-family: "roboto", sans-serif !important;
+}
+.background {
+  background-color: #f1f1f1;
 }
 </style>
