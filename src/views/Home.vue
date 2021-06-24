@@ -1,10 +1,10 @@
 <template>
   <div>
-    <Header/>
-    <div class="text-center"> 
-    <img src="../assets/logotipo.png" alt="Logo">
+    <Header />
+    <div class="text-center">
+      <img src="../assets/logotipo.png" alt="Logo" />
     </div>
-    <Footer/>
+    <Footer />
   </div>
 </template>
 
@@ -21,14 +21,24 @@ export default {
 };
 </script>
 <style>
-
-img{
+img {
   width: 45%;
   height: 45%;
 }
-@media (min-width: 100px ){
-    img{
-      height:91vh;
-    }
+@media (min-width: 100px) {
+  img {
+    height: 91vh;
+  }
+}
+@media (min-height: 100px) {
+  img {
+    width: 50vh;
+  }
+}
+@media (min-width: 800px)
+{
+  img {
+    width: 90vh;
+  }
 }
 </style>

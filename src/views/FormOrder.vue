@@ -6,9 +6,9 @@
         <h1>Ordem de Serviço</h1>
       </div>
       <div>
-        <h4 class="mt-5 mb-4 ">Dados do cliente</h4>
+        <h4 class="mt-5 mb-4">Dados do cliente</h4>
       </div>
-      <div class="">
+      <div>
         <div class="row">
           <div :class="labelClass">
             <label for="nome">Nome:</label>
@@ -104,16 +104,18 @@
         <h4 class="mt-5 mb-4 ">Checklist</h4>
       </div>
 
-      <div class="row " id="checklist" >
-        <div v-for="defeito in defeitos" :key="defeito.id" class="col-12 col-md-4">
-        <input type="checkbox" :value="defeito.id"  v-model="checkedList" />
-        <label class="pl-2">{{defeito.label}}</label>
+      <div class="row " id="checklist">
+        <div
+          v-for="defeito in defeitos"
+          :key="defeito.id"
+          class="col-12 col-md-4"
+        >
+          <input type="checkbox" :value="defeito.id" v-model="checkedList" />
+          <label class="pl-2">{{ defeito.label }}</label>
         </div>
-
       </div>
       <div class="d-flex justify-content-center">
-
-      <button class="my-5">Enviar</button>
+        <button class="my-5">Enviar</button>
       </div>
     </body>
     <Footer />
@@ -134,63 +136,64 @@ export default {
       inputClass: "col-7 col-md-6",
       labelClass: "col-3 col-md-1 text-center",
       checkedList: [],
-      defeitos: [{
-        id: 1,
-        label: "Tela Trincada",
+      defeitos: [
+        {
+          id: 0,
+          label: "Tela Trincada",
         },
-        {        
-        id: 2,
-        label: "Câmera Frontal",
+        {
+          id: 1,
+          label: "Câmera Frontal",
         },
-                {        
-        id: 2,
-        label: "Câmera Frontal",
+        {
+          id: 2,
+          label: "Câmera Traseira",
         },
-                {        
-        id: 2,
-        label: "Câmera Frontal",
+        {
+          id: 3,
+          label: "Bluetooth",
         },
-                {        
-        id: 2,
-        label: "Câmera Frontal",
+        {
+          id: 4,
+          label: "Touch Screen",
         },
-                {        
-        id: 2,
-        label: "Câmera Frontal",
-        }
-        ,        {        
-        id: 2,
-        label: "Câmera Frontal",
-        }
-        ,        {        
-        id: 2,
-        label: "Câmera Frontal",
+        {
+          id: 5,
+          label: "Áudio Auricular",
         },
-                {        
-        id: 2,
-        label: "Câmera Frontal",
+        {
+          id: 6,
+          label: "Microfone",
         },
-                {        
-        id: 2,
-        label: "Câmera Frontal",
-        },        {        
-        id: 2,
-        label: "Câmera Frontal",
+        {
+          id: 7,
+          label: "Wi-Fi",
         },
-
-      ]
+        {
+          id: 8,
+          label: "Conector de Carga",
+        },
+        {
+          id: 9,
+          label: "Alto Falante",
+        },
+        {
+          id: 10,
+          label: "Sensor de proximidade",
+        },
+      ],
     };
   },
 };
 </script>
-<style >
+<style>
 h1 {
   font-weight: bold;
 }
 input {
   border: 2px solid #000000;
 }
-input[type = ""] {
+input[type=""] {
   width: 100% !important;
 }
 textarea {
@@ -201,7 +204,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   width: 10rem;
   height: 3rem;
 
@@ -217,7 +220,10 @@ button {
     height: 91vh;
   }
   #checklist {
-  max-width: 60vw;
-}
+    max-width: 60vw;
+  }
+  textarea {
+    max-width: 70vw;
+  }
 }
 </style>

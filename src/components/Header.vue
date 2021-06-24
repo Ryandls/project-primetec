@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <div id="nav">
-      <div class="d-flex mt-3">
+  <div id="nav">
+    <div  class="container d-flex justify-content-between">
+      <div class="d-flex mt-3 ">
         <router-link to="/">Início</router-link>
         <p>|</p>
 
@@ -62,5 +62,18 @@ p {
 }
 button:hover {
   background-color: #85dd84;
+}
+@media (max-width: 500px)
+{
+  #nav{
+    font-size:13px;
+  }
+  #button {
+    width: 8rem;
+    font-size: 13px;
+    height: 2.3rem;
+    margin-top: 4px;
+    margin-left: 7px;
+  }
 }
 </style>
