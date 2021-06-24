@@ -1,14 +1,14 @@
 <template>
   <div>
     <div id="nav">
-      <div class="d-flex mt-2">
+      <div class="d-flex mt-3">
         <router-link to="/">Início</router-link>
         <p>|</p>
 
         <router-link to="/follow">Acompanhamento</router-link>
       </div>
-      <div class="d-flex">
-        <button>Ordem de Serviço</button>
+      <div class="d-flex mt-1">
+        <router-link id="button" to="/form"> Ordem de Serviço </router-link>
       </div>
     </div>
   </div>
@@ -41,9 +41,14 @@ p {
   color: white;
 }
 
-button {
+#button {
+  display:flex;
+
   width: 230px;
   height: 3rem;
+
+  justify-content: center;
+  align-items: center;
 
   margin-right: 2rem;
 

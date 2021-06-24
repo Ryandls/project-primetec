@@ -26,5 +26,9 @@ img{
   width: 45%;
   height: 45%;
 }
-
+@media (min-width: 100px ){
+    img{
+      height:91vh;
+    }
+}
 </style>

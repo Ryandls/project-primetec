@@ -2,18 +2,23 @@
   <div>
     <Header />
     <body class="background">
-    <div class="text-center mt-5">
-      <h1>Acompanhamento</h1>
-    </div>
-
-    <div id="search" class="ml-4">
-      CPF: <input />
-
-      <button>Buscar</button>
-    </div>
-    <div id="footer">
+      <div class="text-center mt-5">
+        <h1>Acompanhamento</h1>
+      </div>
+      <div id="search" class="ml-4">
+        <div class="row">
+          <div :class="labelClass">
+            <label for="cpf">CPF:</label>
+          </div>
+          <div :class="inputClass">
+            <input id="cpf" />
+          </div>
+          <button>Buscar</button>
+        </div>
+      </div>
+      <div id="footer">
         <h3 class="mt-5 ml-4">Resultados:</h3>
-    </div>
+      </div>
     </body>
     <Footer />
   </div>
@@ -31,7 +36,8 @@ export default {
 };
 </script>
 <style>
-h1,h3 {
+h1,
+h3 {
   font-weight: bold;
 }
 #search {
@@ -55,6 +61,6 @@ h1,h3 {
   border: none;
 }
 #footer {
-    margin-bottom: 35rem;
+  margin-bottom: 35rem;
 }
 </style>
