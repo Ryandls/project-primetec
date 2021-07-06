@@ -30,9 +30,4 @@ img {
   width: 20px;
   height: 20px;
 }
-@media (min-width: 1000px) {
-  #nav {
-    margin-top: 12rem;
-  }
-}
 </style>

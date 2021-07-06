@@ -1,29 +1,31 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home'
-import Follow from '../views/Follow'
-import FormOrder from '../views/FormOrder'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Home from "../views/Home";
+import Follow from "../views/Follow";
+import FormOrder from "../views/FormOrder";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: "/",
+    name: "Home",
+    component: Home,
   },
   {
-    path: '/follow',
-    component: Follow
+    path: "/follow",
+    name: "Follow",
+    component: Follow,
   },
   {
-    path: '/form',
-    component: FormOrder
+    path: "/form",
+    name: "Form",
+    component: FormOrder,
   },
-]
+];
 
 const router = new VueRouter({
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
